@@ -1,0 +1,71 @@
+input[type="text"]{
+  width: 200px; /* Adjust width as needed */
+  height: 22px; /* Adjust height as needed */
+  border-radius: 5px; /* Adjust border radius as needed */
+  border: 2px solid #fcf8f8; /* Add this line */
+}
+
+input[type="password"] {
+  width: 212px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  border-radius: 5px; /* Adjust border radius as needed */
+  border: 2px solid #fcf8f8; /* Add this line */
+}
+
+label[for="email"], label[for="password"] {
+  color: #f8f8f8; /* Change this to your desired color */
+  font-size: 14px; /* Make this the same for both */
+}
+
+/* Button Styles */
+.custom-button {
+  background-color: #0473c2dc; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family:  Georgia, serif;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.custom-button:hover { /*:hover pseudo-class is used to define styles when the button is hovered over by the mouse pointer.*/
+  background-color: #114ab6e1; /* Darker Green */
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  h {
+    margin-bottom: 20px;
+    font-family: Georgia, serif; /* Change this to your desired font */
+    color: #f4f3f3; /* Change this to your desired color */
+    font-size: 25px; /* Add this line */
+}
+
+  body {
+    display: flex;
+    justify-content: flex-end; /* Change this line */
+    align-items: center;
+    min-height: 100vh; /* vh stands for viewport height */
+    margin: 0;
+    background-image: url('/images/iconHealthPattern3.jpg');
+    background-size: cover; /* Add this line */
+    background-position: center; /* Add this line */
+    padding-right: 140px; /* Add this line */
+  }
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fafafa; /* This adds a border */
+    padding: 50px 85px; /* Increase the first value */
+    border-radius: 10px; /* This makes the corners of the border rounded */
+    background: linear-gradient(to right, rgba(16, 232, 232, 0.409), rgba(49, 168, 248, 0.477)); /* Add this line */
+  }

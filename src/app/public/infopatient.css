@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #64ADC4;
+  --hover-color: #4a8d99;
+}
+
+body {
+  background-image: url('/images/image.png');
+  background-size: cover;
+  padding: 20px;
+  margin: 20px;
+  color: black;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="date"], 
+input[type="number"], 
+input[type="gender"],
+select {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: gray;; /* Change this to match your site's theme */
+  z-index: 100;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.fields {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.custom-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.custom-button:hover {
+  background-color: var(--hover-color);
+}

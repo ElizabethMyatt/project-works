@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #64ADC4;
+  --hover-color: #4a8d99;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+body {
+  text-align: center; /* Add this line */
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  background-size: 200% 200%;
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--hover-color) 40%, #8FD8C5 70%, #367096 100%);
+  animation: Gradient 7s ease infinite;
+}
+
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+form {
+  font-size: 18px;
+  background-color: #e6f7ff;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border: 3px solid #367096;
+}
+
+/* Other CSS rules */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 200px; /* Adjust width as needed */
+  height: 16px; /* Adjust height as needed */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styles */
+.custom-button {
+  background-color: var(--primary-color); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.custom-button:hover { /*:hover pseudo-class is used to define styles when the button is hovered over by the mouse pointer.*/
+  background-color: var(--hover-color); /* Darker Green */
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  #content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

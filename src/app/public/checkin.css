@@ -1,0 +1,37 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff; /* Light Gray */
+    color: black;
+    background-image: url('/images/image.png');
+    background-size: cover; /* Scale the image to cover the element */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make the body fill the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, button {
+    font-family: "Roboto", sans-serif;
+}
+.centered {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+.custom-button {
+    background-color: #367096; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+.custom-button:hover {
+    background-color: #4887B7; 
+}

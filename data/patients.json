@@ -1,0 +1,39 @@
+[
+    {
+    "First name": "Anna", 
+    "Last name": "Smith",
+    "birthdate": "08-25-2003",
+    "address": "221 Greek Street",
+    "gender": "female",
+    "age": "20",
+    "phone number": "850-331-4998"
+    },
+
+    {
+    "First name": "Jamie", 
+    "Last name": "Taylor",
+    "birthdate": "07-13-2002",
+    "address": "67 Pine Street",
+    "gender": "male",
+    "age": "21",
+    "phone number": "850-517-2334"
+    },
+    {
+    "First name": "Sam", 
+    "Last name": "Cena",
+    "birthdate": "09-27-2002",
+    "address": "29 Arrow Lane",
+    "gender": "female",
+    "age": "21",
+    "phone number": "850-918-6349"
+    },
+    {
+    "First name": "Travis", 
+    "Last name": "Thornefield",
+    "birthdate": "11-25-2003",
+    "address": "65 Pike Avenue",
+    "gender": "male",
+    "age": "20",
+    "phone number": "850-315-2688"
+    }
+    ]

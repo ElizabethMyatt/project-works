@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="consentForm.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Doctor Consent Form</title>
+</head>
+<body>
+    <script src="/src/app/jsfilesCreated/consent.js" defer></script>
+    <form class="consent-form" id="patientConsentForm" action="/consentform" method="POST">
+ 
+        <legend><b>Consent</b></legend>
+        <fieldset>
+            <p>
+                <ul>
+                    <li><b>Procedure-Specific Risks</b>: Any complications or side effects associated with the specific medical procedures being performed.</li>
+                    <li><b>Medication Risks</b>: Possible adverse reactions to medications that may be administered, including allergies and interactions with other drugs.</li>
+                    <li><b>Diagnostic Risks</b>: Complications that could arise from diagnostic tests, such as infections from blood draws or reactions to contrast dyes used in imaging.</li>
+                    <li><b>Treatment Risks</b>: Potential for treatment failure, need for additional treatments, or the occurrence of unexpected complications.</li>
+                    <li><b>Infection Risks</b>: The possibility of acquiring an infection while in the care facility.</li>
+                    <li><b>Anesthesia Risks</b>: If applicable, the risks associated with anesthesia, including allergic reactions and respiratory issues.</li>
+                    <li><b>Consent Withdrawal</b>: The patient’s right to withdraw consent at any time and the potential consequences of doing so.</li>
+                </ul>
+            </p>
+            <div class="form-group">
+                <label for="patient-name"><b>Patient Name</b>:</label>
+                <input type="text" id="patient-name" name="patient_name" required>
+            </div>
+            <div class="form-group">
+                <label for="date"><b>Today's Date</b>: (MM/DD/YYYY)</label>
+                <input type="text" id="date" name="date" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                By checking this box, I acknowledge that I have read and understood the information provided about routine medical procedures. I authorize the medical team to administer the prescribed medications and perform necessary tests as part of my treatment plan. I understand the purpose and potential risks associated with these interventions, and I agree to proceed with the full knowledge of these factors.
+            </p>
+            <div class="form-group">
+                <label for="confirm" class="fixedwidth">Yes, I agree with the terms</label>
+                <input type="checkbox" name="confirm" id="confirm"/>
+            </div>
+        </fieldset>
+
+        <div class="button" class="fixedwidth">
+            <!-- Custom Button -->
+           <button type="button" class="custom-button" id="submitButton" disabled>Submit</button>
+        </div>
+    
+    </form>
+</body>
+</html>

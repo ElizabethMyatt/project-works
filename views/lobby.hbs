@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="lobby.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Queue </h1>
+        <h2> Current Patient: </h2>
+        <ul>
+            {{#each patients}}
+                <li><b>{{this.id}}</b> - Checked in at {{this.checkInTime}}</li>
+            {{/each}}
+        </ul>
+        </div>
+</body>
+</html>

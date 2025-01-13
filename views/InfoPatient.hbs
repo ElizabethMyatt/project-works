@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+     <link rel="stylesheet" href="app.css">
+     <link rel="stylesheet" href="infopatient.css">
+      <style>
+        /* Progress bar styles */
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 8px;
+            background: gray; /* Change this to match your site's theme */
+            z-index: 100;
+        }
+            input[type="text"], textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays inside the box */
+        margin-top: 6px; /* Add some space on top */
+        margin-bottom: 16px; /* Add some space at the bottom */
+        resize: vertical /* Allow the user to vertically resize the textarea (but not horizontally) */
+    }
+    </style>
+</head>
+<body>
+         <div id="progress-bar"></div>
+      <script src="/src/app/jsfilesCreated/infopatient.js" defer>
+  </script>
+    <div class="centered fields">
+        <h1>Patient Information</h1>
+    </div>
+
+    <!-- Patient Information -->
+    <div class="fields">
+        <form action="/addPatient" method="POST">
+            <h2>Patient Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+              <label for="symptoms">Symptoms:</label><br>
+            <textarea id="symptoms" name="symptoms" rows="4" cols="50"></textarea><br>
+
+            <label for="addictions">Addictions:</label><br>
+            <input type="text" id="addictions" name="addictions"><br>
+
+            <label for="medications">Current Medications:</label><br>
+            <input type="text" id="medications" name="medications"><br>
+
+            <label for="allergies">Allergies:</label><br>
+            <input type="text" id="allergies" name="allergies"><br>
+
+            <button type="submit" class="custom-button" >Continue</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="staff.css">
+    <h1>Welcome!</h1>
+</head>
+
+<form action="/staffLogout" method="post">
+  <button class="custom-button" type="submit">Logout</button>
+</form>
+
+<body>
+    <div class="dropdown">
+     <button class="dropbtn">Account Details</button>
+        <div class="dropdown-content">
+            <p>Name: <br>{{user.username}}</br></p>
+            <p>Email: <br>{{user.email}}</br></p>
+        </div>
+    </div>
+
+    <div class="frame">
+        <h> Patient list: </h>
+        <ul>
+            {{#each patients}}
+                <li><b>{{this.name}} || {{this.birthDate}} || {{this.phonenum}} || {{this.id}} || {{this.gender}} {{this.age}}</b>
+                <button onclick="completePatient('{{this.isActive}}')">Complete</button>
+                </li>
+            {{/each}}
+        </ul>
+</body>
+</html>

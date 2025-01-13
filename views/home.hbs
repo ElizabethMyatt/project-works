@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
+    <link rel="stylesheet" href="home.css">
+    
+    <title>Welcome to Healthnet</title>
+</head>
+<body>
+    <script src="/src/app/jsfilesCreated/home.js" defer></script>
+    <div class="centered">
+    
+        <h1> <b> Welcome to Healthnet! </b> </h1>
+    </div>
+
+    <div class="centered">
+        <p class="centered">
+            Press continue to start check-in!
+        </p>
+        <script>
+            function startCheckIn() {
+    window.location.href = "http://localhost:3000/infopatient"
+}
+        </script>
+        <!-- Custom Button -->
+        <div class="centered">
+            <div>
+                <button class="custom-button" onclick="startCheckIn()">Continue</button>
+            </div>
+        </div>
+    </div>
+<div class="hours">
+    <div class="centered">
+        <h2>Our Hours</h2>
+        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+</div>
+</div>
+    <div class="services-list">
+  <div class="textbox">
+  <p>
+    <b>We can provide for...</b><br><br><br>
+       - Minor illnesses, minor injuries
+       <br>
+       - School examinations
+       <br> 
+       -  Sports physicals
+       <br> 
+       - Routine immunizations
+       <br> 
+       - Laboratory tests
+        <br> 
+       -  Prescriptions
+        <br> 
+       - Imaging
+        <br> 
+       - Specialist referral
+       <br>
+       <br>
+    </p>
+</div>
+</div>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="/images/test1.jpg" style="width:30%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/images/test2.jpg" style="width:30%">
+  </div>
+</div>
+<div class="navbar"> <!-- something we can work on beyond class -->
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+</div>
+</body>
+</html>
